@@ -1,0 +1,6 @@
+{:paths ["src"]
+ :deps {com.etzhayyim/kotoba-datom
+        {:git/url "https://github.com/etzhayyim/com-etzhayyim-kotoba-datom.git"
+         :git/sha "3c4b3b92234e59ba285119fd8b2ca4c2ee172ff8"}
+        cheshire/cheshire {:mvn/version "5.13.0"}}
+ :aliases {:test {:extra-paths ["test"]}}}
