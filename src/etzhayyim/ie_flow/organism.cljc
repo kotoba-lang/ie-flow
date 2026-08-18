@@ -15,7 +15,7 @@
   (:require [clojure.java.io :as io]
             [clojure.edn :as edn]
             [clojure.string :as cstr]
-            [cheshire.core :as json]
+            [json.compat :as json]
             [kotoba.datom :as kd]
             [etzhayyim.ie-flow.ledger :as ledger]
             [etzhayyim.ie-flow.metrics :as metrics]
