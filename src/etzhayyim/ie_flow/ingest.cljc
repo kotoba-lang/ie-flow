@@ -21,7 +21,7 @@
             [clojure.java.io :as io]
             [clojure.string :as str]
             [babashka.process :as p]
-            [cheshire.core :as json]
+            [json.compat :as json]
             [etzhayyim.ie-flow.ledger :as ledger]
             [etzhayyim.ie-flow.metrics :as metrics]))
 
