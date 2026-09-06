@@ -13,7 +13,7 @@
   clj/bb, deterministic (logical time = the snapshot's as-of), no network I/O, no held key — the
   same substrate discipline as vitals/pulse/joucho."
   (:require [clojure.java.io :as io]
-            [clojure.edn :as edn]
+            [kotoba.lang.edn :as edn]
             [clojure.string :as cstr]
             [json.compat :as json]
             [kotoba.datom :as kd]

@@ -17,7 +17,7 @@
   Shelling to the `git` system binary via babashka.process is permitted (we author no logic in
   shell; ADR-2606182359 exemption). Source `:edn-events` ingests any committed EDN vector of event
   maps. :clj only (I/O tool). Deterministic for a fixed range/snapshot."
-  (:require [clojure.edn :as edn]
+  (:require [kotoba.lang.edn :as edn]
             [clojure.java.io :as io]
             [clojure.string :as str]
             [babashka.process :as p]
