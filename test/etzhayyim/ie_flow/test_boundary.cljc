@@ -3,7 +3,7 @@
   (ADR-2606211200): membrane (imports/exports) → measured flow events → IE-flow
   state. Pure, deterministic representative seed."
   (:require [clojure.test :refer [deftest is testing run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [etzhayyim.ie-flow.boundary :as b]))
 
 (deftest adopters-sorted

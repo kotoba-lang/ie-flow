@@ -19,7 +19,7 @@
   maps. :clj only (I/O tool). Deterministic for a fixed range/snapshot."
   (:require [kotoba.lang.edn :as edn]
             [clojure.java.io :as io]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [babashka.process :as p]
             [json.compat :as json]
             [etzhayyim.ie-flow.ledger :as ledger]
@@ -34,7 +34,7 @@
     (if (top-layers seg) seg "root")))
 
 (defn- agent-author? [author]
-  (let [a (str/lower-case (str author))]
+  (let [a (str/lower (str author))]
     (boolean (or (str/includes? a "claude") (str/includes? a "bot")
                  (str/includes? a "noreply") (str/includes? a "[1m]")))))
 

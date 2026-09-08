@@ -19,7 +19,7 @@
   Append-only (:db/add only — re-measurement is a NEW datom, never an overwrite). Deterministic:
   the caller supplies tx-id + as-of (logical time = log length), so the chain is reproducible and
   crash-resume is byte-identical. No network I/O, no held key (no-server-key)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [kotoba.datom :as kd]))
 
 (def ns-prefix "flow")

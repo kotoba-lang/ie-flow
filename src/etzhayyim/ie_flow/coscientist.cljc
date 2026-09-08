@@ -13,7 +13,7 @@
   structurally unrepresentable — the SAME aligned/forbidden vocabulary every organism shares. The
   Murakumo fleet narrates the meta-review (the actor reasons in words) but never the structured
   generation. PURE + deterministic (no wall clock, no randomness)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── the shared safety vocabulary (identical to ibuki.coscientist) ───────────
 
