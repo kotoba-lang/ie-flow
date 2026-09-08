@@ -7,7 +7,7 @@
   stock map, and `simulate` is `reductions` over a sequence of inputs (counterfactual: 施策 before
   vs after). PURE — no I/O, no randomness; a run is reproducible and content-addressable, and is
   persisted to the ledger as a model-run snapshot by the caller."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (defn- clamp01 [x] (-> x double (max 0.0) (min 1.0)))
 

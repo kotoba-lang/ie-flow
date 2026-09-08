@@ -17,7 +17,7 @@
 
   Paths default under the DataLad data root `80-data/ie-flow/<actor>/` (real-world data as EDN,
   measured, content-addressed). Deterministic, no-server-key. Stdlib + ie-flow.{ledger,lifecycle}."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [etzhayyim.ie-flow.coscientist :as cosci]
             [etzhayyim.ie-flow.ledger :as ledger]
             [etzhayyim.ie-flow.lifecycle :as lifecycle]

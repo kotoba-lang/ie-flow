@@ -14,7 +14,7 @@
   same substrate discipline as vitals/pulse/joucho."
   (:require [clojure.java.io :as io]
             [kotoba.lang.edn :as edn]
-            [clojure.string :as cstr]
+            [kotoba.lang.text :as cstr]
             [json.compat :as json]
             [kotoba.datom :as kd]
             [etzhayyim.ie-flow.ledger :as ledger]

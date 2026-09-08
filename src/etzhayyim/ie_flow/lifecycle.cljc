@@ -20,7 +20,7 @@
   Deterministic: logical beat = loop-log length (no wall clock, no randomness). No network I/O, no
   held key (the Murakumo narrator + live persistence are injected/operator-gated). Stdlib + the
   shared kotoba.datom + ie-flow.{metrics,coscientist,ledger}."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [etzhayyim.ie-flow.coscientist :as cosci]
             [etzhayyim.ie-flow.ledger :as ledger]
             [etzhayyim.ie-flow.metrics :as metrics]
