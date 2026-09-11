@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")"
-exec bb -e '
+exec kbb -e '
 (require (quote clojure.test)
          (quote etzhayyim.ie-flow.test-boundary)
          (quote etzhayyim.ie-flow.test-colony)
