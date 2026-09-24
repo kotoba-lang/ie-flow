@@ -1,6 +1,6 @@
 (ns etzhayyim.ie-flow.test-react
   "ie-flow react — co-scientist score-react + Maxwell signal. ADR-2606212200."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [etzhayyim.ie-flow.react :as react]
             [etzhayyim.ie-flow.boundary :as b]))
 

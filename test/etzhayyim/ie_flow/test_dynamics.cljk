@@ -1,6 +1,6 @@
 (ns etzhayyim.ie-flow.test-dynamics
   "ie-flow system dynamics — step-system / simulate / counterfactual. ADR-2606211200."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [etzhayyim.ie-flow.dynamics :as d]))
 
 (def init {:customers 1000 :trust 0.7 :data-asset 15000 :model-quality 0.6 :reserves 200000})

@@ -1,6 +1,6 @@
 (ns etzhayyim.ie-flow.test-metrics
   "ie-flow metrics — entropy / order-index / net-gain / agent-efficiency. ADR-2606211200."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [etzhayyim.ie-flow.metrics :as m]))
 
 (deftest entropy-and-normalize

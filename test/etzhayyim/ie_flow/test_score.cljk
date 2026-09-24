@@ -1,6 +1,6 @@
 (ns etzhayyim.ie-flow.test-score
   "test-score — the information-control score + artificial-organism reward. ADR-2606212200."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [etzhayyim.ie-flow.metrics :as m]
             [etzhayyim.ie-flow.score :as s]))
 
@@ -79,5 +79,5 @@
 
 #?(:clj
    (when (= *file* (System/getProperty "babashka.file"))
-     (let [{:keys [fail error]} (clojure.test/run-tests 'etzhayyim.ie-flow.test-score)]
+     (let [{:keys [fail error]} (kotoba.test/run-tests 'etzhayyim.ie-flow.test-score)]
        (System/exit (if (zero? (+ fail error)) 0 1)))))

@@ -1,8 +1,8 @@
 (ns etzhayyim.ie-flow.test-coscientist
   "ie-flow co-scientist — Generate→Reflect→Rank→Evolve→Meta-review + the shared safety property.
   The invariant under test: a self-persisting actor can never propose a predatory mechanism."
-  (:require [clojure.set :as set]
-            [clojure.test :refer [deftest is]]
+  (:require [kotoba.lang.coll :as set]
+            [kotoba.test :refer [deftest is]]
             [etzhayyim.ie-flow.coscientist :as c]))
 
 (def healthy {:net-gain 100.0 :order-index 0.6})

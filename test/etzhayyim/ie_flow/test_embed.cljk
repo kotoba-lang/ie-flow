@@ -2,7 +2,7 @@
   "Invariants for ie-flow.embed — the system-of-systems entry point: per-actor
   ledger path resolution + the aligned-only catalog extension (ADR-2606211200).
   The three embedding verbs (record!/measure/beat!) are #?(:clj) IO and deferred."
-  (:require [clojure.test :refer [deftest is testing run-tests]]
+  (:require [kotoba.test :refer [deftest is testing run-tests]]
             [etzhayyim.ie-flow.embed :as ie]
             [etzhayyim.ie-flow.boundary :as b]))
 
