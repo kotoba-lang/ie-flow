@@ -1,6 +1,6 @@
 (ns etzhayyim.ie-flow.test-ledger
   "ie-flow ledger — append-only kotoba Datom log round-trips the flow facts. ADR-2606211200."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [etzhayyim.ie-flow.ledger :as ledger]
             [etzhayyim.ie-flow.metrics :as metrics]
             [kotoba.datom :as kd]))

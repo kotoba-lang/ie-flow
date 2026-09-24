@@ -12,7 +12,7 @@
   A regression in the entropy base, the normalisation, or the order-index formula is caught as a
   violated invariant, not just a drifted single number."
   (:require [etzhayyim.ie-flow.metrics :as m]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (defn- close? [a b] (< (Math/abs (- (double a) (double b))) 1e-9))
 

@@ -1,7 +1,7 @@
 (ns etzhayyim.ie-flow.test-lifecycle
   "ie-flow lifecycle — the SENSE→…→PERSIST co-scientist ReAct beat over a flow ledger.
   Tests determinism, crash-resume, leak-free scoring, and the charter gates. ADR-2606211200."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [etzhayyim.ie-flow.coscientist :as cosci]
             [etzhayyim.ie-flow.ledger :as ledger]
             [etzhayyim.ie-flow.lifecycle :as lc]

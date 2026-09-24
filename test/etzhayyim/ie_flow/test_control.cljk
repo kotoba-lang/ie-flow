@@ -1,6 +1,6 @@
 (ns etzhayyim.ie-flow.test-control
   "ie-flow control — PI capture+control of the flow stocks → numbers. ADR-2606212200."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [etzhayyim.ie-flow.control :as ctl]))
 
 (deftest pi-control-converges-to-target

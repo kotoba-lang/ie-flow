@@ -1,6 +1,6 @@
 (ns etzhayyim.ie-flow.test-gate-adapter
   "test-gate-adapter — the shared gate/observatory ie-flow adapter. ADR-2606212200."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [etzhayyim.ie-flow.gate-adapter :as ga]))
 
 (def rows
@@ -49,5 +49,5 @@
 
 #?(:clj
    (when (= *file* (System/getProperty "babashka.file"))
-     (let [{:keys [fail error]} (clojure.test/run-tests 'etzhayyim.ie-flow.test-gate-adapter)]
+     (let [{:keys [fail error]} (kotoba.test/run-tests 'etzhayyim.ie-flow.test-gate-adapter)]
        (System/exit (if (zero? (+ fail error)) 0 1)))))

@@ -1,6 +1,6 @@
 (ns etzhayyim.ie-flow.test-reward
   "ie-flow reward — the per-actor 報酬系. ADR-2606212200."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [etzhayyim.ie-flow.reward :as r]
             [etzhayyim.ie-flow.boundary :as b]))
 

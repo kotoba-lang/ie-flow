@@ -2,7 +2,7 @@
   "Invariants for ie-flow.boundary — each actor as a BOUNDED dissipative system
   (ADR-2606211200): membrane (imports/exports) → measured flow events → IE-flow
   state. Pure, deterministic representative seed."
-  (:require [clojure.test :refer [deftest is testing run-tests]]
+  (:require [kotoba.test :refer [deftest is testing run-tests]]
             [kotoba.lang.text :as str]
             [etzhayyim.ie-flow.boundary :as b]))
 
